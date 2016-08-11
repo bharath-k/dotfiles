@@ -1,10 +1,10 @@
-# everytime options
+ everytime options
 alias grep="grep --color=auto --exclude-dir=.svn"
 alias ls="ls -h -G"
 alias ll="ls -l"
 alias la="ll -a"
 alias mkdir="mkdir -p"
-alias ps="ps f"
+alias ps="ps -f"
 alias ssh="ssh -A"
 # not everytime options
 alias cert2text="openssl x509 -noout -text -in"
