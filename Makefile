@@ -1,6 +1,5 @@
 
 CP = cp
-
 USER_HOMEDIR = $(shell echo ~$(USER))
 FILES = $(shell ls | grep -v Makefile)
 
