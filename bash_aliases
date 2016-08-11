@@ -1,6 +1,6 @@
 # everytime options
 alias grep="grep --color=auto --exclude-dir=.svn"
-alias ls="ls -h --color=auto"
+alias ls="ls -h -G"
 alias ll="ls -l"
 alias la="ll -a"
 alias mkdir="mkdir -p"
