@@ -1,4 +1,4 @@
- everytime options
+# everytime options
 alias grep="grep --color=auto --exclude-dir=.svn"
 alias ls="ls -h -G"
 alias ll="ls -l"
