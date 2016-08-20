@@ -1,4 +1,6 @@
-
+#
+# Makefile to copy configuration files to user home directory.
+#
 CP = cp
 USER_HOMEDIR = $(shell echo ~$(USER))
 FILES = $(shell ls | grep -v Makefile)
