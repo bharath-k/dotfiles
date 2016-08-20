@@ -31,3 +31,4 @@ PS1="$C_RED[\t] $C_BROWN\u$C_CYAN@$C_BROWN$SHORTHOST$C_CYAN:$C_BLUE \w $C_RED\$$
 shopt -s cdspell checkwinsize cmdhist histappend no_empty_cmd_completion
 if [ ${BASH_VERSINFO} -ge 4 ]; then shopt -s autocd checkjobs dirspell; fi
 if [[ ${BASH_VERSION} =~ "4.2" ]]; then shopt -s direxpand; fi
+[[ $- == *i* ]] && [[ $TERM != "screen" ]] && { if tmux has-session; then exec tmux attach; else exec tmux; fi; }
