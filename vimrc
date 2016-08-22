@@ -23,4 +23,4 @@ set backspace=indent    " Can delete back past auto-indenting
 set backspace=eol       " Can delete back to the previous line
 
 " For solarized color scheme - http://ethanschoonover.com/solarized
-olorscheme solarized   " Choose the color scheme as solarized
+colorscheme solarized   " Choose the color scheme as solarized
