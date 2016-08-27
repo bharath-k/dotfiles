@@ -18,9 +18,14 @@ set softtabstop=4       " Sets the number of columns for a TAB
 
 set expandtab           " Expand TABs to spaces
 
-set backspace=start     " Can delete back past start of edit
-set backspace=indent    " Can delete back past auto-indenting
-set backspace=eol       " Can delete back to the previous line
+set backspace=indent,eol,start  " start- Can delete back past start of edit
+                                " indent -Can delete back past auto-indenting
+                                " eol - Can delete back to the previous line
 
 " For solarized color scheme - http://ethanschoonover.com/solarized
 colorscheme solarized   " Choose the color scheme as solarized
+
+" The following alternative may be less obtrusive.
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+:nnoremap <Leader>wn :match ExtraWhitespace /^\s* \s*\<Bar>\s\+$/<CR>
+:nnoremap <Leader>wf :match<CR>
