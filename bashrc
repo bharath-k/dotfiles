@@ -34,4 +34,4 @@ if [[ ${BASH_VERSION} =~ "4.2" ]]; then shopt -s direxpand; fi
 
 # Instructions to connect to existing tmux session or start a new one when a
 # bash shell is started
-[[ $- == *i* ]] && [[ $TERM != "screen" ]] && { if tmux has-session; then exec tmux attach; else exec tmux; fi; }
+# [[ $- == *i* ]] && [[ $TERM != "screen" ]] && { if tmux has-session; then exec tmux attach; else exec tmux; fi; }
