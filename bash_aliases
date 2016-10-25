@@ -24,3 +24,4 @@ alias fcdisable="sudo sed -i s/enabled=1/enabled=0/ /etc/yum.repos.d/fedora-upst
 alias crontabs="sudo find /var/spool/cron -type f -exec cat {} +"
 alias ws2nl="perl -pe 's/[\ \t]/\n/g'"
 alias pylint="pylint --load-plugins pylint_django"
+alias vimtohtml="vim -c 'set nonu' -c TOhtml -c wqa"

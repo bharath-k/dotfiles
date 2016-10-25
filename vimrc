@@ -50,10 +50,10 @@ colorscheme solarized   " Choose the color scheme as solarized
 :nnoremap <Leader>wf :match<CR>
 
 " To move across items in vim help documentation
-nmap <silent> D       : cnext<CR>
-nmap <silent> DD      : cnfile<CR><C-G>
-nmap <silent> A       : cprev<CR>
-nmap <silent> AA      : cpfile<CR><C-G>
+nmap <silent> <RIGHT> : cnext<CR>
+nmap <silent> <RIGHT><RIGHT> : cnfile<CR><C-G>
+nmap <silent> <LEFT> : cprev<CR>
+nmap <silent> <LEFT><LEFT> : cpfile<CR><C-G>
 
 "============================================================================
 " Make :help appear in a full-screen tab, instead of a window
